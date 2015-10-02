@@ -1,0 +1,13 @@
+<div class="artist">  
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="artist-img" style="background-image:url('<%= artist.image_url %>');background-repeat:no-repeat;background-size:cover;"></div>
+      </div>
+      <div class="panel-footer">
+        <h3><%= artist.name.titleize %></h3>
+        <%= link_to "Ver más", root_path, class: 'btn btn-primary btn-md btn-block' %>
+      </div>
+    </div>
+  </div>
+</div>
