@@ -16,3 +16,44 @@
     }
   }
 }
+
+.artist-profile {
+
+  margin: 0 30px;
+
+  h1 {
+    margin-bottom: 35px;
+  }
+
+  .profile-img {
+    text-align: right;
+    img {
+      border-color: 2px solid red;
+      border-radius: 5px;
+      width: 85%;
+    }
+  }
+
+  .albums {
+
+    .album-count {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .album {
+
+      .panel-body {
+        padding: 0;
+      }
+
+      .album-img {
+        height: 150px;
+      }
+
+      .album-name {
+        font-size: 16px;
+      }
+    }
+  }
+}
