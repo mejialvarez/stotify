@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20151001162048) do
 
   create_table "albums", force: :cascade do |t|
-    t.string   "name",        limit: 50,  null: false
+    t.string   "name",        limit: 50
     t.string   "image_url",   limit: 100
-    t.integer  "released_at", limit: 4,   null: false
-    t.integer  "artist_id",               null: false
+    t.integer  "released_at", limit: 4
+    t.integer  "artist_id"
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
   end
@@ -25,17 +25,17 @@ ActiveRecord::Schema.define(version: 20151001162048) do
   add_index "albums", ["artist_id"], name: "index_albums_on_artist_id"
 
   create_table "artists", force: :cascade do |t|
-    t.string   "name",       limit: 50,  null: false
+    t.string   "name",       limit: 50
     t.string   "image_url",  limit: 100
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
 
   create_table "songs", force: :cascade do |t|
-    t.string   "name",        limit: 50,  null: false
-    t.integer  "number",      limit: 4,   null: false
-    t.string   "preview_url", limit: 100, null: false
-    t.integer  "album_id",                null: false
+    t.string   "name",        limit: 50
+    t.integer  "number",      limit: 4
+    t.string   "preview_url", limit: 100
+    t.integer  "album_id"
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
   end
