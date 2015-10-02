@@ -1,0 +1,17 @@
+<div class="artist-profile">
+  <div class="row">
+    <div class="col-lg-7">
+      <h1><%= @artist.name.titleize %></h1>
+      <div class="albums">
+        <div class="album-count">Albums (<%= @artist.albums.size %>)</div>
+        <div class="row">
+          <%= render partial: 'album', collection: @artist.albums %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="profile-img"><%= image_tag @artist.image_url %></div>
+    </div>
+  </div>
+</div>

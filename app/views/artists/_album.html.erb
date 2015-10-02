@@ -1,0 +1,13 @@
+<div class="album">
+  <div class="col-md-3">
+   <div class="panel panel-default">
+     <div class="panel-body">
+       <div class="album-img" style="background-image:url('<%= album.image_url %>');background-repeat:no-repeat;background-size:cover;"></div>
+     </div>
+     <div class="panel-footer">
+       <h3 class="album-name"><%= album.name.titleize %></h3>
+       <p><%= album.released_at %></p>
+     </div>
+   </div>
+  </div>
+</div>
